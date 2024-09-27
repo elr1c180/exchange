@@ -4,7 +4,11 @@ import time
 import hashlib
 import requests
 
-app = FastAPI()
+app = FastAPI(
+    title="Exchange API",  # Новый заголовок
+    description="Все точки доступа к API биржи",  # Описание API
+    version="1.0.0",  # Версия API
+)
 
 # Конфигурационные переменные
 AUTHORIZATION_KEY = "WEB1e95f5d65acf925255b9bd02e849743uhfjnkwfffbe3667952fbd66c43a1dc09df"
